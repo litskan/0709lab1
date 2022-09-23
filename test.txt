@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+# Login
+import os,sys,subprocess, logging
+import getpass,socket, win32net
+import sqlite3,time
+import psutil, ctypes
+import telebot
+import configparser
+
+INIFILE=os.path.realpath(__file__).split('.py')[0]+'.ini'
+config = configparser.ConfigParser()
+config.read(INIFILE)
+config_General=config['General']
+config_Telegram=config['Telegram']
