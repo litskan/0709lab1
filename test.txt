@@ -7,6 +7,7 @@ import psutil, ctypes
 import telebot
 import configparser
 
+#test
 INIFILE=os.path.realpath(__file__).split('.py')[0]+'.ini'
 config = configparser.ConfigParser()
 config.read(INIFILE)
